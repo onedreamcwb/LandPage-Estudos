@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Estudos de Python e IA</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meus Estudos de Python e IA</h1>
+        <nav>
+            <a href="index.html">Exercícios</a>
+            <a href="projetos.html">Projetos de IA</a>
+            <a href="anotacoes.html">Anotações</a>
+            <a href="sobre.html">Sobre Mim</a>
+            <a href="blog.html">Meu Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="exercicios">
+            <h2>Exercício: Soma de Dois Números Inteiros</h2>
+            <p><strong>Enunciado:</strong> Peça dois números inteiros ao usuário, some-os e mostre o resultado. Repita até o usuário decidir sair.</p>
+            <h3>Código Python:</h3>
+            <pre><code>
+while True:
+    while True:
+        try:
+            primeiro_numero = int(input("Escolha um número qualquer\n"))
+            break
+        except ValueError:
+            print("Valor inválido, por favor digite um número inteiro.")
+
+    while True:
+        try:
+            segundo_numero = int(input("Agora escolha outro número\n"))
+            break
+        except ValueError:
+            print("Valor inválido, por favor digite um número inteiro.")
+
+    numero_real = primeiro_numero + segundo_numero
+    print(f"A soma total é {numero_real}")
+
+    sair = input("Deseja fazer outra soma? (s/n): ")
+    if sair.lower() != 's':
+        print("Programa finalizado.")
+        break
+            </code></pre>
+            <h3>Explicação:</h3>
+            <p>O programa pede dois números inteiros, soma e mostra o resultado. Se o usuário digitar algo errado, pede novamente. Repete até o usuário digitar algo diferente de "s".</p>
+            <h3>Resultado esperado:</h3>
+            <p>O usuário vê a soma dos números e pode repetir ou sair.</p>
+        </section>
+        <section id="projetos">
+            <h2>Projetos de IA</h2>
+            <p>Em breve!</p>
+        </section>
+
+        <section id="anotacoes">
+            <h2>Anotações</h2>
+            <p>Coloque aqui seus resumos, dicas e aprendizados.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Gustavo Araujo - 2025</p>
+    </footer>
+</body>
+</html>
+
+<style>
+#sobre {
+    margin-bottom: 40px;
+    background: #f0f4f8;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+.linguagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.linguagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.logo-linguagem {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.barra-nivel {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 8px;
+    height: 22px;
+    overflow: hidden;
+}
+
+.nivel {
+    height: 100%;
+    background: #4caf50;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    transition: width 0.5s;
+}
+</style>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Anotações - Meus Estudos de Python e IA</title>
+    <link rel="stylesheet" href="../styles/anotacoes.css">
+    <script>
+        function filtrar(tipo) {
+            const anotacoes = document.querySelectorAll('.anotacao');
+            anotacoes.forEach(a => {
+                if (tipo === 'todas' || a.classList.contains(tipo)) {
+                    a.classList.add('visivel');
+                } else {
+                    a.classList.remove('visivel');
+                }
+            });
+            document.querySelectorAll('.filtro-btn').forEach(btn => btn.classList.remove('ativo'));
+            document.getElementById('btn-' + tipo).classList.add('ativo');
+        }
+        window.onload = function() { filtrar('todas'); }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Anotações</h1>
+        <nav>
+            <a href="index.html">Exercícios</a>
+            <a href="projetos.html">Projetos de IA</a>
+            <a href="anotacoes.html">Anotações</a>
+            <a href="sobre.html">Sobre Mim</a>
+            <a href="blog.html">Meu Blog</a>
+        </nav>
+    </header>
+    <main>
+        <div class="filtros">
+            <button class="filtro-btn ativo" id="btn-todas" onclick="filtrar('todas')">Todas</button>
+            <button class="filtro-btn" id="btn-resumo" onclick="filtrar('resumo')">Resumos</button>
+            <button class="filtro-btn" id="btn-dica" onclick="filtrar('dica')">Dicas</button>
+            <button class="filtro-btn" id="btn-comando" onclick="filtrar('comando')">Comandos</button>
+            <button class="filtro-btn" id="btn-curiosidade" onclick="filtrar('curiosidade')">Curiosidades</button>
+        </div>
+        <section>
+            <div class="anotacao resumo visivel">
+                <span class="tag">Resumo</span>
+                <h3>Resumo sobre listas em Python</h3>
+                <p>Listas são coleções mutáveis e ordenadas de elementos. Exemplo: <code>lista = [1, 2, 3]</code></p>
+            </div>
+            <div class="anotacao dica">
+                <span class="tag">Dica</span>
+                <h3>Dica para usar input em Python</h3>
+                <p>Sempre converta o input para o tipo desejado, por exemplo: <code>idade = int(input("Digite sua idade: "))</code></p>
+            </div>
+            <div class="anotacao comando">
+                <span class="tag">Comando</span>
+                <h3>Comando para instalar pacotes</h3>
+                <p>Use <code>pip install nome_do_pacote</code> para instalar bibliotecas Python.</p>
+            </div>
+            <div class="anotacao curiosidade">
+                <span class="tag">Curiosidade</span>
+                <h3>Curiosidade sobre IA</h3>
+                <p>O termo "Inteligência Artificial" foi criado em 1956 por John McCarthy.</p>
+            </div>
+            <!-- Adicione mais anotações conforme desejar -->
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gustavo Araujo - 2025</p>
+    </footer>
+</body>
+</html>

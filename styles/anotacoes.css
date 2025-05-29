@@ -87,10 +87,14 @@ a.bloco-link {
 }
 
 a.bloco-link .anotacao {
-    transition: box-shadow 0.2s, transform 0.2s;
+    transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+    cursor: pointer;
 }
 
 a.bloco-link:hover .anotacao {
-    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18);
-    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 4px 16px rgba(15, 15, 15, 0.18);
+    transform: translateY(-2px) scale(1.02);
+    background: #141414;
+    cursor: pointer;
 }
+

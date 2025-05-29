@@ -81,14 +81,6 @@ section {
     margin-bottom: 40px;
 }
 
-pre {
-    background: #222;
-    color: #b5f4a5;
-    padding: 15px;
-    border-radius: 5px;
-    overflow-x: auto;
-}
-
 footer {
     background: #222;
     color: #fff;

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício: Algoritmo para Limpar um Cômodo</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Exercícios</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="projetos.html">Projetos de IA</a>
+            <a href="anotacoes.html">Anotações</a>
+            <a href="sobre.html">Sobre Mim</a>
+            <a href="blog.html">Meu Blog</a>
+            <a href="exercicios.html">Exercícios</a>
+        </nav>
+    </header>
+    <main>
+        <article class="exercicio">
+            <h2>Exercício: Algoritmo para Limpar um Cômodo da Casa</h2>
+            <p>
+                Neste exercício, o objetivo é criar um algoritmo que ajude o usuário a organizar a limpeza de um cômodo da casa. O programa deve permitir que o usuário escolha entre três cômodos (cozinha, quarto ou banheiro), mostrar os materiais necessários para a limpeza e os passos recomendados para cada cômodo. Ao final, o usuário pode decidir se quer limpar outro cômodo ou encerrar a tarefa.
+            </p>
+            <h3>Como funciona o algoritmo:</h3>
+            <ul>
+                <li>O usuário escolhe qual cômodo deseja limpar: cozinha, quarto ou banheiro.</li>
+                <li>O programa mostra uma lista de materiais necessários para aquele cômodo.</li>
+                <li>O programa exibe um passo a passo de como limpar o cômodo escolhido.</li>
+                <li>Após finalizar, o usuário pode escolher limpar outro cômodo ou encerrar.</li>
+                <li>Quando todos os cômodos forem limpos, o programa parabeniza o usuário.</li>
+            </ul>
+            <h3>Exemplo de código em Python:</h3>
+            <pre><code class="language-python">
+materiais_quarto = ["Vassoura", "Pano", "Espanador", "Saco de lixo"]
+materiais_cozinha = ["Vassoura", "Pano", "Detergente", "Esponja", "Saco de Lixo"]
+materiais_banheiro = ["Desinfetante", "Escova", "Pano", "Balde", "Saco de Lixo"]
+comodos_limpos = []
+
+while len(comodos_limpos) < 3:
+    opcoes = []
+    if "cozinha" not in comodos_limpos:
+        opcoes.append("1. Cozinha")
+    if "quarto" not in comodos_limpos:
+        opcoes.append("2. Quarto")
+    if "banheiro" not in comodos_limpos:
+        opcoes.append("3. Banheiro")
+    print("\nEscolha qual cômodo você quer limpar:")
+    print('\n'.join(opcoes))
+    escolha = int(input("Digite sua Resposta: "))
+
+    if escolha == 1 and "cozinha" not in comodos_limpos:
+        print(f"Pegue esses materiais: {', '.join(materiais_cozinha)}")
+        print("1. Lave a louça\n2. Limpe a pia\n3. Varra a cozinha\n4. Passe pano no chão\n5. Tire o lixo")
+        comodos_limpos.append("cozinha")
+    elif escolha == 2 and "quarto" not in comodos_limpos:
+        print(f"Pegue esses materiais: {', '.join(materiais_quarto)}")
+        print("1. Arrume a cama\n2. Tire o lixo\n3. Varra o quarto\n4. Passe pano\n5. Limpe os móveis")
+        comodos_limpos.append("quarto")
+    elif escolha == 3 and "banheiro" not in comodos_limpos:
+        print(f"Pegue esses materiais: {', '.join(materiais_banheiro)}")
+        print("1. Lave o vaso\n2. Limpe a pia\n3. Varra o banheiro\n4. Passe pano\n5. Tire o lixo")
+        comodos_limpos.append("banheiro")
+    else:
+        print("Opção inválida ou cômodo já limpo. Tente novamente.")
+        continue
+
+    if len(comodos_limpos) < 3:
+        continuar = input("Deseja limpar outro cômodo? (s/n): ")
+        if continuar.lower() != 's':
+            certeza = input("Tem certeza que não quer limpar os outros cômodos? (s/n): ")
+            if certeza.lower() == 's':
+                print("Ok! Se mudar de ideia, volte para deixar tudo brilhando! :)")
+                break
+            else:
+                continue
+
+if len(comodos_limpos) == 3:
+    print("Uau! Você limpou todos os cômodos da casa! Agora sim, pode descansar e curtir um ambiente limpinho. Parabéns pelo esforço!")
+            </code></pre>
+            <h3>Resumo:</h3>
+            <p>
+                Esse exercício ajuda a praticar lógica de programação, uso de listas, laços e condicionais em Python, além de mostrar como automatizar tarefas do dia a dia!
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gustavo Araujo - 2025</p>
+    </footer>
+</body>
+</html>

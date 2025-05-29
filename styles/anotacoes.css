@@ -80,3 +80,17 @@ footer {
     margin-top: 40px;
     border-radius: 0 0 8px 8px;
 }
+a.bloco-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+a.bloco-link .anotacao {
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+a.bloco-link:hover .anotacao {
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18);
+    transform: translateY(-2px) scale(1.01);
+}

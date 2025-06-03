@@ -2,6 +2,7 @@
 estudantes = []
 
 def menu_operacoes(nome):
+#Primeiro Loop
     while True:
         print(f"\n--- Menu de Operações: {nome} ---")
         print("(1) Incluir")
@@ -20,15 +21,15 @@ def menu_operacoes(nome):
             print(f"Funcionalidade '{op}' de {nome} ainda não implementada.")
         else:
             print("Opção inválida. Tente novamente.")
-
+# Segundo Loop
 print('---- MENU PRINCIPAL ----')
 while True:
-    print('(1) Gerenciar Estudantes.') 
-    print('(2) Gerenciar Disciplinas.') 
-    print('(3) Gerenciar Professores.') 
-    print('(4) Gerenciar Turmas.') 
-    print('(5) Gerenciar Matrículas.')
-    print('(0) Sair.') 
+    print("(1) Gerenciar Estudantes.") 
+    print("(2) Gerenciar Disciplinas.") 
+    print("(3) Gerenciar Professores.") 
+    print("(4) Gerenciar Turmas.'") 
+    print("(5) Gerenciar Matrículas.")
+    print("(0) Sair.") 
     try:
         opcao = int(input("\nDigite a Opção Desejada: "))
     except ValueError:
@@ -40,18 +41,8 @@ while True:
     elif opcao == 1:
         print("Você escolheu: Gerenciar Estudantes.")
         menu_operacoes("Estudantes")
-    elif opcao == 2:
-        print("Você escolheu: Gerenciar Disciplinas.")
-        menu_operacoes("Disciplinas")
-    elif opcao == 3:
-        print("Você escolheu: Gerenciar Professores.")
-        menu_operacoes("Professores")
-    elif opcao == 4:
-        print("Você escolheu: Gerenciar Turmas.")
-        menu_operacoes("Turmas")
-    elif opcao == 5:
-        print("Você escolheu: Gerenciar Matrículas.")
-        menu_operacoes("Matrículas")
-    else:
-        print("Opção inválida. Tente novamente.")
+    elif opcao in [2, 3, 4, 5]:
+        print("Em Desenvolvimento")
+        
+    
 

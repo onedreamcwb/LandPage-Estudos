@@ -17,10 +17,17 @@ def menu_operacoes(nome):
             continue
         if op == 0:
             break
-        elif op in [1, 2, 3, 4]:
-            print(f"Funcionalidade '{op}' de {nome} ainda não implementada.")
-        else:
-            print("Opção inválida. Tente novamente.")
+        elif op == 1:
+            nome_estudante = input("Digite o nome do Estudante: ")
+            estudantes.append(nome_estudante)
+            print(f"Estudante '{nome_estudante}' Incluido com Sucesso!")
+        elif op ==2:
+            # Para listar estudantes, não precisa de append!
+            if not estudantes:
+                print("Não há estudantes cadastrados!")    
+            else:
+                for estudante in estudantes:
+                    print(estudante)
 # Segundo Loop
 print('---- MENU PRINCIPAL ----')
 while True:
@@ -43,6 +50,6 @@ while True:
         menu_operacoes("Estudantes")
     elif opcao in [2, 3, 4, 5]:
         print("Em Desenvolvimento")
-        
-    
+    else:
+        print("Opção inválida. Tente novamente.")
 

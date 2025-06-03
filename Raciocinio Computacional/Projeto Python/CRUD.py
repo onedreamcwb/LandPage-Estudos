@@ -1,5 +1,9 @@
+import time
+
 # Lista para armazenar os estudantes
 estudantes = []
+modulos = {2: "Disciplinas", 3: "Professores", 4: "Turmas", 5: "Matrículas"}
+
 
 def menu_operacoes(nome):
 #Primeiro Loop
@@ -49,8 +53,8 @@ while True:
         print("Você escolheu: Gerenciar Estudantes.")
         menu_operacoes("Estudantes")
     elif opcao in [2, 3, 4, 5]:
-        modulos = {2: "Disciplinas", 3: "Professores", 4: "Turmas", 5: "Matrículas"}
-        print(f"\nGerenciamento de {modulos[opcao]} está em desenvolvimento. Por favor, escolha outra opção.\n")
+        print("\nFuncionalidade em desenvolvimento. Por favor, escolha outra opção.\n")
+        time.sleep(1)
     else:
         print("Opção inválida. Tente novamente.")
 

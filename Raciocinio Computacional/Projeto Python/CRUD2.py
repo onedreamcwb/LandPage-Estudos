@@ -12,9 +12,16 @@ def menu_operacoes(nome):
             print("Por favor, digite um número válido!")
             continue
         if op == 0:
+            print(f"Voltando ao menu principal de {nome}...")
             break
-        elif op in [1, 2, 3, 4]:
-            print(f"Funcionalidade '{op}' de {nome} ainda não implementada.")
+        elif op == 1:
+            print(f"Você escolheu: Incluir em {nome}. (Funcionalidade ainda não implementada.)")
+        elif op == 2:
+            print(f"Você escolheu: Listar em {nome}. (Funcionalidade ainda não implementada.)")
+        elif op == 3:
+            print(f"Você escolheu: Atualizar em {nome}. (Funcionalidade ainda não implementada.)")
+        elif op == 4:
+            print(f"Você escolheu: Excluir em {nome}. (Funcionalidade ainda não implementada.)")
         else:
             print("Opção inválida. Tente novamente.")
 

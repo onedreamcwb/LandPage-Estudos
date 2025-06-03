@@ -49,7 +49,8 @@ while True:
         print("Você escolheu: Gerenciar Estudantes.")
         menu_operacoes("Estudantes")
     elif opcao in [2, 3, 4, 5]:
-        print("Em Desenvolvimento")
+        modulos = {2: "Disciplinas", 3: "Professores", 4: "Turmas", 5: "Matrículas"}
+        print(f"\nGerenciamento de {modulos[opcao]} está em desenvolvimento. Por favor, escolha outra opção.\n")
     else:
         print("Opção inválida. Tente novamente.")
 

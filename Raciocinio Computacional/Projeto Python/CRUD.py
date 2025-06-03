@@ -1,3 +1,6 @@
+# Lista para armazenar os estudantes
+estudantes = []
+
 def menu_operacoes(nome):
     while True:
         print(f"\n--- Menu de Operações: {nome} ---")

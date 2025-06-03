@@ -26,8 +26,8 @@ def menu_operacoes(nome):
             if not estudantes:
                 print("Não há estudantes cadastrados!")    
             else:
-                for estudante in estudantes:
-                    print(estudante)
+                for i, estudante in enumerate(estudantes, 1):
+                    print(f"{i}. {estudante}")
 # Segundo Loop
 print('---- MENU PRINCIPAL ----')
 while True:

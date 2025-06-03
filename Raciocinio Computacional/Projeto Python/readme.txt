@@ -50,7 +50,3 @@ Este projeto é um sistema simples de **gerenciamento acadêmico**, desenvolvido
 ## Sobre o desenvolvimento
 
 Durante a preparação deste projeto de programação, o autor usou Visual Studio Code, Python 3.10 e Git para desenvolver, testar e versionar o código de forma organizada e eficiente. Após usar essas ferramentas, o autor revisou e editou o conteúdo conforme necessário e assume total responsabilidade pelo conteúdo.
-
----
-
-Sinta-se à vontade para adaptar conforme sua necessidade!

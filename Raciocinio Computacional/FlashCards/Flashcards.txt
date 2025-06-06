@@ -1,0 +1,20 @@
+O que significa CRUD?;Create, Retrieve, Update, Delete (Criar, Consultar, Atualizar, Excluir)
+Para que serve a função menu_principal()?;Exibir o menu principal e controlar a navegação do usuário entre os módulos.
+Como armazenar os nomes dos estudantes no sistema?;Usando uma lista chamada estudantes.
+Como incluir um estudante no sistema?;Solicitando o nome via input() e adicionando à lista estudantes com append().
+Como listar estudantes cadastrados?;Percorrendo a lista estudantes com um laço for e exibindo cada nome.
+O que acontece se tentar listar estudantes com a lista vazia?;O sistema mostra "Não há estudantes cadastrados!".
+Como tratar entradas inválidas do usuário?;Usando try/except para capturar ValueError ao converter input para int.
+O que faz o comando break dentro de um while True?;Encerra o laço e retorna ao menu anterior ou encerra o programa.
+Como mostrar opções de menu para o usuário?;Usando print() para exibir as opções numeradas.
+O que acontece ao escolher uma funcionalidade em desenvolvimento?;O sistema mostra "Funcionalidade em desenvolvimento" e retorna ao menu principal.
+Como numerar estudantes ao listar?;Usando enumerate(estudantes, 1) no laço for.
+Qual comando para adicionar um item a uma lista em Python?;lista.append(item)
+Como garantir que o menu principal sempre reapareça?;Colocando o menu dentro de um laço while True.
+Como sair do sistema pelo menu principal?;Selecionando a opção 0, que executa break no laço principal.
+Por que separar o menu de operações em uma função?;Para organizar o código, facilitar manutenção e reutilização.
+O que significa a mensagem "EM DESENVOLVIMENTO"?;Que aquela funcionalidade ainda não foi implementada.
+Como evitar que o programa quebre com entradas erradas?;Tratando exceções com try/except.
+Como deixar o código mais limpo e legível?;Usando nomes claros, indentação correta e separando em funções.
+Para que serve o time.sleep(1) no menu principal?;Para dar uma pausa e melhorar a experiência do usuário após mensagens.
+Como expandir o sistema no futuro?;Implementando as operações CRUD para os outros módulos e salvando dados em arquivos.
